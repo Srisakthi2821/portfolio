@@ -1,0 +1,124 @@
+.Work_Experice_container {
+  background: #010611;
+  --gap: 10em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.178);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+  padding: 50px;
+}
+.headingWorkExp {
+  color: white;
+  font-size: 40px;
+  font-family: 'roboto';
+}
+.containerWorkexp_lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  height: 100%;
+  width: 100%;
+  padding: 0px 0px 50px 0px;
+  position: relative;
+}
+
+.hrlineWorkExp {
+  position: absolute;
+  border: 3px solid rgb(246, 246, 246);
+  width: 30vw;
+  transform: rotate(90deg);
+  margin-top: 300px;
+  z-index: 0;
+}
+
+.container_worlItem {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border: 4px solid #1f1615;
+  box-shadow: 0px 0px 30px #5a221c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headingWorkExp_item {
+  font-size: 30px;
+}
+.workExpImage {
+  height: 150%;
+  width: 200%;
+}
+
+.floatingCard {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+  transform: translateY(-50%);
+  background-color: #00000094;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 18px rgba(57, 57, 57, 0.423);
+  z-index: 2; /* Ensure it appears above other elements */
+  max-width: 350px; /* Adjust as needed */
+  border: 1px solid rgba(255, 255, 255, 0.112);
+}
+.paraWorkItem {
+  color: rgb(183, 178, 178);
+}
+.floatingCard2 {
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  transform: translateY(-50%);
+  background-color: #00000094;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 18px rgba(57, 57, 57, 0.423);
+  z-index: 2; /* Ensure it appears above other elements */
+  max-width: 350px; /* Adjust as needed */
+  border: 1px solid rgba(255, 255, 255, 0.112);
+}
+.floatingCard3 {
+  position: absolute;
+  right: 300px;
+  top: 570px;
+  transform: translateY(-50%);
+  background-color: #00000094;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 18px rgba(57, 57, 57, 0.423);
+  z-index: 2; /* Ensure it appears above other elements */
+  max-width: 350px; /* Adjust as needed */
+  border: 1px solid rgba(255, 255, 255, 0.112);
+}
+.lookingJobImg {
+  height: 110px;
+  width: 110px;
+  margin: 10px;
+}
+.s2ndWorkItem {
+  box-shadow: 0px 0px 30px #22cdb696;
+}
+.t3rdWorkItemCont {
+  overflow: visible;
+  box-shadow: 0px 0px 30px #000000;
+}

@@ -1,0 +1,6 @@
+.container_certificates {
+  padding: 80px 20px;
+  display: flex;
+  background-color: #1c1570;
+  flex-wrap: wrap;
+}

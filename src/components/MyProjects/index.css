@@ -1,0 +1,238 @@
+.background_main_projects {
+  background-color: #1c1570;
+  padding: 100px 10px;
+  overflow-x: hidden;
+}
+
+.navbar_top_projects {
+  padding: 10px 25px;
+  background: #0f003d;
+}
+
+.main_head_myPorojects {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffe500;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.icon_back_projects {
+  color: #ffe500;
+  font-size: 4rem;
+  top: 0;
+  left: 0;
+  right: 10;
+  z-index: 1;
+  bottom: 10;
+  font-weight: 600;
+  position: absolute;
+  margin: 4px 30px;
+  transition: 0.5s;
+}
+
+.icon_back_projects:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 10px #ffe500;
+  transform: translateX(-15px);
+}
+
+/**********project Cards************/
+.card_project_background {
+  height: 25rem;
+  background: #1a1716;
+  transition: 0.5s;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0px;
+  margin: 20px;
+}
+
+.card_project_background:hover {
+  box-shadow: 0px 0px 100px #ffff3f;
+}
+
+.card_img_projct {
+  background-color: #1a1716;
+  height: 100%;
+  background-position: center;
+  box-shadow: 0px -100px 150px 1px #000 inset;
+  background-size: cover;
+  transition: 0.5s;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.card_img_projct:hover {
+  box-shadow: 0px 0px 1px black;
+}
+
+#video_celelemt {
+  height: 16rem;
+  margin: 0px;
+}
+
+#heading_card {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #ffee32;
+  border-bottom: 5px solid #003566;
+}
+
+#para_project {
+  letter-spacing: 2px;
+  color: #ffc300;
+  font-size: 1.4rem;
+}
+
+.button_visit_Site {
+  border: none;
+  background-color: #003566;
+  padding: 10px 17px;
+  color: #ffd60a;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.button_visit_Site:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  background: #ffd60a;
+  color: #000;
+}
+
+.topSwipeIcon {
+  font-size: 3rem;
+  color: white;
+  animation: swipeAnimi 3s ease-in infinite;
+  transition: 0.5s;
+}
+
+@keyframes swipeAnimi {
+  30% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.swipeTXt_pro {
+  animation: swipeAnimitxt 3s ease-in infinite;
+  transition: 0.5s;
+  font-size: 2rem;
+  color: white;
+  margin-top: -10px;
+}
+
+@keyframes swipeAnimitxt {
+  30% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .background_main_projects {
+    height: 250vh;
+  }
+
+  .navbar_top_projects {
+    padding: 5px 13px;
+  }
+
+  .main_head_myPorojects {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .icon_back_projects {
+    font-size: 2.5rem;
+    margin: 4px 10px;
+  }
+
+  /**********project Cards************/
+  .card_project_background {
+    height: 15rem;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .card_project_background:hover {
+    box-shadow: 0px 0px 100px #ffff3f;
+  }
+
+  .card_img_projct {
+    box-shadow: 0px -50px 70px 1px #000 inset;
+    padding: 8px;
+  }
+
+  .card_img_projct:hover {
+    box-shadow: 0px 0px 1px black;
+  }
+
+  #video_celelemt {
+    height: 10rem;
+    margin: 0px;
+  }
+
+  #heading_card {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #003566;
+  }
+
+  #para_project {
+    letter-spacing: 2px;
+    color: #ffc300;
+    font-size: 1rem;
+  }
+
+  .button_visit_Site {
+    padding: 5px 8px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    transition: 0.2s;
+  }
+
+  .topSwipeIcon {
+    font-size: 2rem;
+  }
+
+  .swipeTXt_pro {
+    font-size: 1rem;
+    color: white;
+    margin-top: -10px;
+  }
+
+  #video_celelemt {
+    height: 70% !important;
+  }
+
+  .card_img_projct img {
+    height: 70% !important;
+    width: 80% !important;
+  }
+  #video_celelemt5 {
+    width: 100% !important;
+  }
+  .todoAppproject {
+    font-size: 0.8rem !important;
+  }
+}

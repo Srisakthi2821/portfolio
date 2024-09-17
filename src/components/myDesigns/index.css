@@ -1,0 +1,417 @@
+.coverContainer_myDEsign {
+  overflow: hidden;
+}
+.container_mydesign {
+  padding: 100px 30px;
+  width: 100vw;
+  height: 100%;
+  background-color: #010b1c;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+/*Buttons container*/
+.containerbuttons_mydesign {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.heading_buttonS {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ccc5b9;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Foldit', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+.hoverInstruct_buttons {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.containerButton {
+  padding: 30px;
+  border: 1px solid rgb(43, 42, 42);
+  height: 120px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/*button1*/
+
+.buttonBuy {
+  min-width: 150px;
+  min-height: 100px;
+  all: unset;
+  color: white;
+  transition: 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: #100720;
+}
+
+.buttonBuy:hover {
+  transform: translateY(5px);
+  background: black;
+  min-width: 130px;
+  min-height: 50px;
+}
+
+.para {
+  all: unset;
+  color: white;
+  transition: 0.5s ease;
+  margin: 10px 2px;
+  margin-right: 10px;
+  font-family: 'Playwrite IT Moderna', cursive;
+}
+
+.buttonBuy:hover .para {
+  margin-left: -30px;
+}
+
+.imageButton {
+  margin-left: 10px;
+  max-height: 50px;
+  color: black;
+  transition: 0.5s ease;
+  z-index: 5;
+}
+
+.buttonBuy:hover .imageButton {
+  animation: animiButton 20s ease;
+  color: #ba664a;
+  margin: 6px 10px;
+  position: absolute;
+  font-size: 30px;
+}
+
+.buttonBuy:active {
+  color: white;
+  background: black;
+}
+
+.buttonBuy:hover .para {
+  display: none;
+}
+
+.hrl {
+  border: none;
+  display: none;
+  border-top: 3px dashed white;
+  height: 0;
+  width: 100%;
+  margin: 20px 0;
+  animation: hrlineAnimation 4s ease forwards;
+}
+
+.buttonBuy:hover .hrl {
+  display: block;
+}
+
+.boxes {
+  display: none;
+  color: white;
+  position: absolute;
+  max-height: 40px;
+  transition: 1s ease;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 18px;
+}
+
+.buttonBuy:hover .boxes {
+  position: absolute;
+  display: block;
+  animation: boxesComing 7s ease forwards;
+}
+
+.completedtxt {
+  padding: 0px;
+  margin: 6px 3px;
+  color: #1fde6b;
+  font-size: 16px;
+  display: none;
+  font-family: 'Playwrite IT Moderna', cursive;
+}
+
+.buttonBuy:hover .completedtxt {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  bottom: 0;
+  right: 0;
+  animation: successAnimation 2.4s ease forwards;
+}
+
+@keyframes animiButton {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  3% {
+    transform: translateY(0px);
+  }
+
+  7% {
+    transform: translateX(1px);
+  }
+
+  10% {
+    filter: drop-shadow(30px 0px 10px #e0e743);
+  }
+
+  15% {
+    transform: translateX(120px);
+    opacity: 1;
+  }
+
+  16% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes boxesComing {
+  10% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+
+  19% {
+    transform: translateY(0px);
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hrlineAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes successAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  97% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* Button 2*/
+
+.buttonbuynow_slide {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding: 7px 66px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Foldit', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.buttonbuynow_slide:hover {
+  box-shadow: 0.5px 0.5px 150px #252525;
+}
+
+.slide_bNow_Button::after {
+  content: 'Buy Now 🛒';
+  height: 50px;
+  width: 150px;
+  background-color: #e22034;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1rem;
+  padding: 2px 5px 5px 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide_bNow_Button::before {
+  content: 'Confirm ✅';
+  height: 50px;
+  width: 150px;
+  background-color: #6b0c2f;
+  color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide_bNow_Button:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.slide_bNow_Button:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+/*button 3*/
+.containerButton3 {
+  padding: 5px 5px 40px 5px;
+  border-radius: 7px;
+}
+.Container_button_reflece {
+  background: #03e9f4;
+  width: 130px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  transition: 0.5s ease;
+}
+.Container_button_reflece:hover {
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+  box-shadow:
+    0 0 5px #03e9f4,
+    0 0 5px #03e9f4,
+    0 0 5px #03e9f4,
+    0 0 60px #03e9f4;
+  cursor: pointer;
+}
+.Text_reflextButton {
+  font-size: 20px;
+  font-weight: 600;
+}
+/*button 4*/
+
+.underlineButtonFromCenter {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  height: 40px;
+  background: white;
+  overflow: hidden;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.underlineButtonFromCenter:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: black;
+  height: 40px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.underlineButtonFromCenter:hover:before,
+.underlineButtonFromCenter:focus:before,
+.underlineButtonFromCenter:active:before {
+  left: 0;
+  right: 0;
+}
+
+.underlineButtonFromCenter:hover {
+  color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 10px 0px white;
+}
+/*info*/
+.para_morebuttonsInfo {
+  font-size: 30px;
+  color: white;
+  align-self: center;
+  font-family: 'Playwrite BE WAL', cursive;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.image_moreButtonSoon {
+  max-height: 60vh;
+}
+@media only screen and (max-width: 780px) {
+  .container_mydesign {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading_buttonS {
+    font-size: 1.5rem;
+  }
+  .containerbuttons_mydesign {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .para_morebuttonsInfo {
+    font-size: 0.8rem;
+    align-self: center;
+    margin: 20px 5px;
+  }
+  .image_moreButtonSoon {
+    height: 20vh;
+  }
+}

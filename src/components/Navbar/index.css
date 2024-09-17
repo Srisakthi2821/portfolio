@@ -1,0 +1,23 @@
+.linkTag {
+  all: unset;
+  cursor: pointer;
+}
+.linkTag:hover {
+  all: unset;
+  cursor: pointer;
+}
+.nav-item {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Saira Condensed', sans-serif;
+}
+.nav-item:hover {
+  cursor: pointer;
+}
+.homeIconNavbar {
+  height: 20px;
+  width: 10px;
+  color: yellow;
+}
